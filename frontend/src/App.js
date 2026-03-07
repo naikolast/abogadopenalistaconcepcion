@@ -1,6 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 import "@/App.css";
 import { motion, useInView, AnimatePresence } from "framer-motion";
+import axios from "axios";
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
 import { 
   Phone, Mail, MapPin, Clock, Shield, Scale, Users, FileCheck, 
   ChevronDown, ChevronRight, Menu, X, MessageCircle, Award,
@@ -768,19 +772,32 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setErrorMessage("");
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    setFormData({ name: "", email: "", phone: "", message: "" });
-    
-    setTimeout(() => setIsSubmitted(false), 5000);
+    try {
+      const response = await axios.post(`${API}/contact`, {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        message: formData.message
+      });
+      
+      if (response.data.status === "success" || response.data.status === "partial") {
+        setIsSubmitted(true);
+        setFormData({ name: "", email: "", phone: "", message: "" });
+        setTimeout(() => setIsSubmitted(false), 5000);
+      }
+    } catch (error) {
+      console.error("Error sending contact form:", error);
+      setErrorMessage("Error al enviar el mensaje. Por favor intente nuevamente o contáctenos por WhatsApp.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -899,6 +916,18 @@ const Contact = () => {
                 >
                   <CheckCircle size={20} />
                   ¡Mensaje enviado! Nos contactaremos pronto.
+                </motion.div>
+              )}
+
+              {errorMessage && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="bg-red-50 text-red-700 p-4 rounded-md flex items-center gap-3"
+                  data-testid="contact-error-message"
+                >
+                  <AlertTriangle size={20} />
+                  {errorMessage}
                 </motion.div>
               )}
             </form>
