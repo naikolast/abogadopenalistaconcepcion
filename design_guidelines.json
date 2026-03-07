@@ -1,0 +1,133 @@
+{
+  "identity": {
+    "name": "Díaz & Cía Abogados",
+    "persona": "E1: The Anti-AI Designer",
+    "tone": "Authoritative, Protective, Modern, Premium, Serious",
+    "target_audience": "Individuals in Concepción facing criminal charges, seeking urgent and solid defense.",
+    "mission": "To provide immediate confidence and robust legal defense with a premium, modern approach."
+  },
+  "typography": {
+    "primary_font": "Playfair Display",
+    "secondary_font": "Manrope",
+    "usage": {
+      "headings": "Playfair Display, serif, font-bold, tracking-tight",
+      "body": "Manrope, sans-serif, leading-relaxed",
+      "ui_elements": "Manrope, sans-serif, font-medium, tracking-wide"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl lg:text-8xl",
+      "h2": "text-4xl md:text-5xl",
+      "h3": "text-2xl md:text-3xl",
+      "body": "text-base md:text-lg"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": "#1A3C34",
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#F9FAF8",
+      "secondary_foreground": "#1A3C34",
+      "accent": "#C25E00",
+      "accent_foreground": "#FFFFFF",
+      "neutral": "#E5E7EB",
+      "background": "#FFFFFF",
+      "foreground": "#0A0A0A"
+    },
+    "contextual_usage": {
+      "hero_bg": "primary",
+      "hero_text": "white",
+      "cta_button": "accent",
+      "section_bg_alt": "secondary",
+      "borders": "primary/10"
+    }
+  },
+  "layout_strategy": {
+    "spacing": "Generous. Use p-8, p-12, p-24. Avoid cramped sections.",
+    "grid_system": "Bento Grid (Mode A) for Specialties and Features.",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "alignment": "Asymmetrical balance. Avoid centering everything. Use left alignment for body text to maintain reading flow."
+  },
+  "components": {
+    "buttons": {
+      "default": "bg-primary text-white hover:bg-primary/90 rounded-md px-8 py-4 font-semibold shadow-lg transition-transform hover:-translate-y-1",
+      "cta": "bg-accent text-white hover:bg-accent/90 rounded-md px-8 py-4 font-bold shadow-xl transition-all hover:scale-105",
+      "outline": "border-2 border-primary text-primary hover:bg-primary hover:text-white rounded-md px-8 py-4 font-semibold transition-colors"
+    },
+    "cards": {
+      "style": "Flat, sharp edges or minimal rounded-lg (rounded-lg).",
+      "border": "border border-primary/10",
+      "hover": "hover:border-primary/30 hover:shadow-xl transition-all duration-300"
+    },
+    "inputs": {
+      "style": "bg-secondary border-transparent focus:border-primary focus:ring-1 focus:ring-primary rounded-md h-12"
+    }
+  },
+  "visual_enhancers": {
+    "textures": "Use subtle grain/noise overlays on dark backgrounds to avoid flat digital look.",
+    "glassmorphism": "Use backdrop-blur-xl with bg-white/80 for sticky headers.",
+    "motion": "Use framer-motion for scroll-triggered entrance animations (fade-up, stagger).",
+    "shadows": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]"
+  },
+  "images": {
+    "hero_bg": "https://images.unsplash.com/photo-1766603636774-5f328e0da870?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwzfHxtaW5pbWFsaXN0JTIwYXJjaGl0ZWN0dXJhbCUyMGRldGFpbHMlMjBjb25jcmV0ZSUyMHdvb2R8ZW58MHx8fHwxNzcyOTI3MDUxfDA&ixlib=rb-4.1.0&q=85",
+    "lawyer_consulting": "https://images.unsplash.com/photo-1736939666660-d4c776e0532c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwzfHxsYXd5ZXIlMjBjb25zdWx0aW5nJTIwY2xpZW50JTIwc2VyaW91cyUyMHByb2Zlc3Npb25hbHxlbnwwfHx8fDE3NzI5MjcwNDF8MA&ixlib=rb-4.1.0&q=85",
+    "team_meeting": "https://images.unsplash.com/photo-1714974528767-cbe4f78363d0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHw0fHxidXNpbmVzcyUyMHBlb3BsZSUyMG1lZXRpbmclMjBzZXJpb3VzJTIwZGlzY3Vzc2lvbnxlbnwwfHx8fDE3NzI5MjcwNTF8MA&ixlib=rb-4.1.0&q=85",
+    "office_detail": "https://images.unsplash.com/photo-1771270759486-1f7703945072?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjBpbnRlcmlvciUyMGRhcmslMjB3b29kJTIwZXhlY3V0aXZlfGVufDB8fHx8MTc3MjkyNzA1MHww&ixlib=rb-4.1.0&q=85",
+    "texture_wood": "https://images.unsplash.com/photo-1766801848054-b83f9e04db86?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwYXJjaGl0ZWN0dXJhbCUyMGRldGFpbHMlMjBjb25jcmV0ZSUyMHdvb2R8ZW58MHx8fHwxNzcyOTI3MDUxfDA&ixlib=rb-4.1.0&q=85"
+  },
+  "sections_structure": {
+    "header": {
+      "type": "Sticky Glass",
+      "elements": ["Logo (Text: Díaz & Cía)", "Nav Links (Especialidades, Equipo, FAQ)", "CTA (Agendar)"]
+    },
+    "hero": {
+      "layout": "Split or Offset",
+      "content": {
+        "headline": "Defensa Penal Estratégica en Concepción.",
+        "subheadline": "Protegemos su libertad y su futuro con un enfoque moderno, riguroso y confidencial.",
+        "cta_primary": "Consulta Urgente WhatsApp",
+        "cta_secondary": "Conocer Especialidades"
+      }
+    },
+    "specialties": {
+      "type": "Bento Grid",
+      "items": ["Delitos Sexuales", "Delitos Violentos", "Delitos Económicos", "Defensa de Propiedad"]
+    },
+    "why_us": {
+      "layout": "Asymmetric Feature List",
+      "features": ["Estrategia Preventiva", "Confidencialidad Absoluta", "Disponibilidad 24/7", "Resultados Comprobados"]
+    },
+    "team": {
+      "layout": "Grid of Portraits",
+      "style": "Clean, dark text on white cards, no borders, shadow hover."
+    },
+    "process": {
+      "layout": "Step-by-step vertical timeline or horizontal cards."
+    },
+    "testimonials": {
+      "layout": "Carousel or Masonry Grid",
+      "style": "Minimalist quotes, focus on the emotional relief of the client."
+    }
+  },
+  "tech_stack": {
+    "framework": "React",
+    "styling": "Tailwind CSS",
+    "icons": "Lucide React",
+    "animations": "Framer Motion",
+    "notifications": "Sonner"
+  },
+  "installation_instructions": [
+    "yarn add framer-motion",
+    "yarn add lucide-react",
+    "yarn add sonner",
+    "yarn add clsx tailwind-merge"
+  ],
+  "universal_guidelines": [
+    "Do not use generic gradients.",
+    "Use deep, rich colors for emphasis.",
+    "Ensure high contrast for accessibility.",
+    "Micro-animations on all interactive elements.",
+    "No 'AI slop' aesthetics; keep it sharp and intentional.",
+    "Respect the 'E1' persona: bold, architectural, fused disciplines."
+  ]
+}
