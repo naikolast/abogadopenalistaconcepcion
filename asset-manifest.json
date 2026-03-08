@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/abogadopenalistaconcepcion/static/css/main.fa5681bf.css",
+    "main.js": "/abogadopenalistaconcepcion/static/js/main.a4c7cb0f.js",
+    "index.html": "/abogadopenalistaconcepcion/index.html",
+    "main.fa5681bf.css.map": "/abogadopenalistaconcepcion/static/css/main.fa5681bf.css.map",
+    "main.a4c7cb0f.js.map": "/abogadopenalistaconcepcion/static/js/main.a4c7cb0f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa5681bf.css",
+    "static/js/main.a4c7cb0f.js"
+  ]
+}
