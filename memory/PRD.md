@@ -51,7 +51,8 @@ Rediseño completo del sitio web de Díaz & Cía Abogados (abogadopenalistaconce
 - [x] SEO básico
 
 ### P1 (Alta prioridad) - Pendiente
-- [ ] Integrar envío real de formulario (SendGrid/Resend)
+- [x] Integrar envío de formulario con Resend (contactos se guardan en BD, email pendiente de verificar dominio)
+- [ ] Verificar dominio diazyciaabogados.cl en Resend para activar emails
 - [ ] Crear páginas individuales de especialidades
 - [ ] Agregar fotos reales del equipo
 - [ ] Implementar Google Analytics / GTM
